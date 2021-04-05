@@ -1,0 +1,13 @@
+section {
+    text-align: center;
+    display: inline-block;
+    border: dashed 2px #20C983;
+    width: 250px;
+    height: 250px;
+}
+
+section p {
+    border: solid 5px #0936CA;
+    padding: 20px;
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+  }
+
+td {
+    border: 1px solid #ddd;
+}
+
+table thead tr th {
+    background-color: #CCCCCC;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #F1F1F1;
+}
+
+tbody tr:hover {
+    background-color: black;
+    color: white;
+}

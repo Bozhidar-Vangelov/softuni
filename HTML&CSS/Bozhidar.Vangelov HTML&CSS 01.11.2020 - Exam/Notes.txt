@@ -1,0 +1,29 @@
+Font awesome: @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css';
+
+box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+
+Reset:
+
+* {
+	box-sizing: border-box;	
+}
+ 
+body {
+	margin: 0;
+	padding: 0;
+}
+ 
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+flex-explained:
+https://codepen.io/TodorovStanimir/pen/dyXvRBm
+
+
+Background-images properties:
+  background-image: url(image/fitness-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;

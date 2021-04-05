@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+section {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #306085;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  padding: 40px 110px;
+  margin: 50px auto;
+  width: 65%;
+}
+
+.content {
+  flex-basis: 59%;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.lighter-text {
+  color: darkgrey;
+}
+
+.images {
+  margin-left: 30px;
+}
+
+.images img {
+  position: relative;
+  z-index: 2;
+}
+
+.images img:nth-child(2) {
+  margin-left: 10px;
+}
+
+.lighter-text::before {
+  content: url(images/dots.svg);
+  position: absolute;
+  left: 228px;
+  top: 315px;
+}
+
+.images::after {
+  display: block;
+  content: " ";
+  background-image: url(images/arrow.svg);
+  background-size: 340px 360px;
+  height: 360px;
+  width: 340px;
+  position: absolute;
+  top: 75px;
+  right: 270px;
+}
+
+.images::before {
+  display: block;
+  content: " ";
+  background-image: url(images/dots.svg);
+  background-size: 70px 170px;
+  height: 67px;
+  width: 100px;
+  position: absolute;
+  left: 66%;
+  top: 9%;
+  z-index: 1;
+}

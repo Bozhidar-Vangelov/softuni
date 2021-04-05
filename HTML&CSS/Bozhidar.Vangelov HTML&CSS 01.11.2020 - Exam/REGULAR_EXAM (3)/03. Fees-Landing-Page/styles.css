@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #56556d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  align-items: center;
+  background: white;
+}
+
+.logo-wrapper {
+  display: flex;
+}
+
+.logo-wrapper img {
+  max-width: 120px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  color: #56556d;
+}
+
+.menu li {
+  padding: 0px 8px;
+  font-weight: 600;
+}
+
+.taxes {
+  background: linear-gradient(180deg, #54546d 59%, #fff 50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.heading-taxes {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  padding-top: 35px;
+  color: white;
+  font-weight: 500;
+}
+
+.taxes-content {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.basics,
+.fundamentals,
+.professional {
+  flex-basis: 29%;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  color: #56556d;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.basics h3 {
+  margin-bottom: 0;
+}
+
+.apply {
+  border-radius: 35px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #9a5dc6;
+  padding: 14px 32px;
+  margin: 40px auto;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.free {
+  background: linear-gradient(to left, #4cd781, #029a3c);
+  color: white;
+  height: 100px;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  top: 7px;
+}
+
+.free h3 {
+  font-weight: 500;
+}
+
+.fundamentals-taxes {
+  background: linear-gradient(to left, #629bd0, #4c6b87);
+  color: white;
+  height: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  top: 19px;
+}
+
+.professional-taxes {
+  background: linear-gradient(to left, #8d7ee2, #4a37a5);
+  color: white;
+  height: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.money h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.money,
+.info {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-around;
+}
+
+.fundamentals-taxes::after {
+  content: "";
+  border-left: 1px solid white;
+  height: 80px;
+  position: absolute;
+  right: 200px;
+  top: 10px;
+}
+
+.professional-taxes::after {
+  content: "";
+  border-left: 1px solid white;
+  height: 80px;
+  position: absolute;
+  right: 395px;
+  top: 400px;
+}
+
+.taxes::before {
+  content: url(images/calculator-icon.svg);
+  position: absolute;
+  left: -50px;
+  top: 90px;
+}
+
+.middle-content {
+  width: 70%;
+  margin: 5% auto;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 100%;
+}
+
+table tr {
+  padding: 10px;
+}
+
+table tr td {
+  padding: 20px 10px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.fa-check {
+  color: #12a945;
+}
+
+.fa-times {
+  color: #fc4c50;
+}
+
+.post-bank {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-bank-content {
+  margin-right: 10%;
+}
+
+footer {
+  text-align: center;
+  color: #858eaa;
+  background: #54546d;
+  margin-top: 100px;
+}
+
+footer p {
+  margin: 0;
+  padding: 30px;
+}

@@ -1,0 +1,62 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 2% 10%;
+}
+
+h1,
+h4 {
+  font-family: Georgia, serif;
+  color: black;
+}
+
+section {
+  display: flex;
+}
+
+.heading-content,
+.content {
+  color: #7b8894;
+}
+
+.button {
+  flex-basis: 25%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.button button {
+  border: none;
+  outline: none;
+  background: #03a87c;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 50px;
+  color: white;
+  border-radius: 2px;
+}
+
+.button button:hover {
+  cursor: pointer;
+}
+
+.content {
+  flex-basis: 27%;
+  color: #7b8894;
+  align-items: flex-end;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+span {
+  background-color: #cefde9;
+}
+
+.line {
+  width: 300px;
+  height: 47px;
+  border-bottom: 1px solid #8A8A8A;
+  margin-left: 14%;
+  margin-top: 15px
+}

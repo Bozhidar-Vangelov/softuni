@@ -1,0 +1,30 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+header h1 {
+    display: inline-block;
+    padding-right: 200px;
+
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    color: #13A113;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+}
+
+hr {
+    background-color: #000;
+    border: 0 none;
+    color: #000;
+    height: 2px;
+}

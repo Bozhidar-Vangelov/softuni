@@ -1,0 +1,19 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css';
+
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    background-color: #EEEEEE;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+a {
+    border-radius: 50%;
+    color: #262626;
+}

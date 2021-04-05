@@ -1,0 +1,66 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75); */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+  background-color: #d01919;
+  color: white;
+}
+
+header article {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  padding: 0px 12px 0px 0px;
+}
+
+.cover {
+  padding: 5px 50px;
+  background-image: url(image/fitness-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  background-size: cover;
+  color: white;
+}
+
+.cover-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cover-menu li {
+  padding: 0 50px;
+  list-style: none;
+}
+
+.cover-heading {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-family: "PT Serif", serif;
+}
+
+.cover-content {
+  text-align: center;
+  width: 24%;
+  margin: 0 auto;
+}
+
+.cover-button {
+  display: flex;
+  margin: 30px auto 50px;
+  background-color: #d01919;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}

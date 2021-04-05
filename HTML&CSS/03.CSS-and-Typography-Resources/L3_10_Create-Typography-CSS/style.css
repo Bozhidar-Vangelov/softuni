@@ -1,0 +1,42 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+  }
+
+td {
+    border: 1px solid #ddd;
+}
+
+table thead tr th {
+    background-color: #CCCCCC;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #F1F1F1;
+}
+
+tbody tr:hover {
+    background-color: black;
+    color: white;
+}
+
+blockquote {
+    border-left: rgb(221, 221, 221) 2px solid;
+    font-style: italic;
+}

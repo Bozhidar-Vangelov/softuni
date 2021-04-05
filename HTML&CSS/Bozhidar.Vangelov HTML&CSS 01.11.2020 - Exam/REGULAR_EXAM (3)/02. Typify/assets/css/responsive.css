@@ -1,0 +1,55 @@
+@media all and (max-width: 600px) {
+  .banner h2,
+  .actions li,
+  .banner .button.special {
+    width: 90%;
+  }
+
+  .banner h2 {
+    font-size: 1.7em;
+  }
+
+  .wrapper.section {
+    display: flex;
+  }
+
+  .wrapper.special {
+    display: flex;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .grid-form {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .inner.narrow {
+    margin: 20px;
+  }
+
+  .inner.narrow .grid-form .action {
+    margin: 20px 0;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  .grid-form .form-control.narrow {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+}

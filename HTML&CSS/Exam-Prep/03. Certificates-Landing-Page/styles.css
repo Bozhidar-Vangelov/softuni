@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.75);
+  align-items: center;
+  background: white;
+  position: relative;
+  z-index: 3;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  color: #565971;
+}
+
+.menu li {
+  padding: 0px 10px;
+}
+
+.menu .enter {
+  background-color: #9b5dc6;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.diplomas-and-certificates {
+  display: flex;
+  align-items: center;
+  padding: 10px 60px;
+  margin-bottom: 10px;
+}
+
+.diplomas-and-certificates .content {
+  display: block;
+  padding: 0;
+}
+
+.diplomas-and-certificates .content h3 {
+  color: #565971;
+}
+
+.diplomas-and-certificates .images {
+  padding: 0;
+  margin-left: 5%;
+}
+
+.diplomas-and-certificates .images img {
+  position: relative;
+  z-index: 2;
+}
+
+.award {
+  background: #54546d;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  padding: 125px 180px;
+  top: -165px;
+}
+
+.award img {
+  right: -125px;
+  bottom: -50px;
+}
+
+.lighter-text {
+  color: #6b6b66;
+  font-style: italic;
+}
+
+.cpe {
+  display: flex;
+  align-items: center;
+  padding: 10px 60px;
+  background-color: #14162b;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.cpe-images {
+  margin-left: 5%;
+  position: relative;
+  top: 50px;
+}
+
+.careers {
+  display: flex;
+  padding: 40px 60px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.careers-content {
+  padding-left: 25px;
+}
+
+.careers-mail {
+  background: transparent;
+  border: 1px solid #9b5dc6;
+  color: #9b5dc6;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px 15px;
+  margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2c2c3a;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 60px;
+}
+
+footer ul li {
+  margin: 10px 0px;
+}
+
+footer h4 {
+  color: #9a5cc5;
+}
+
+.social-media-icons {
+  display: flex;
+  font-size: 20px;
+}
+
+.social-media-icons li {
+  padding: 0px 15px;
+  margin: 21px 0px;
+}
+
+.social-media-icons li:nth-child(1) {
+  padding-left: 0;
+}
+
+.all-initiatives h4 {
+  margin-top: -10px;
+}

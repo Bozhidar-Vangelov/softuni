@@ -1,0 +1,19 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+p {
+    margin: 50px;
+}
+
+.click {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.email {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

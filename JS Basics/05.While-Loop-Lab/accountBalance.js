@@ -1,0 +1,19 @@
+function accountBalance(input) {
+  let index = 0;
+  let balance = 0;
+  let deposit = input[index++];
+
+  while (deposit !== "NoMoreMoney") {
+    let amount = Number(deposit);
+    if (amount < 0) {
+      console.log("Invalid operation!");
+      break;
+    }
+    balance += amount;
+    console.log(`Increase: ${amount.toFixed(2)}`);
+    deposit = input[index++];
+  }
+  console.log(`Total: ${balance.toFixed(2)}`);
+}
+
+accountBalance(["120", "45.55", "-150"]);

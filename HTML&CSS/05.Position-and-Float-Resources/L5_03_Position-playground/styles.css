@@ -1,0 +1,44 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css';
+
+body {
+    margin: 0;
+}
+
+i {
+    color: white;
+}
+
+.first-card, .second-card {
+    height: 100vh;
+    text-align: center;
+}
+
+.first-card {
+    background: linear-gradient(90deg, rgba(24,91,157,1) 0%, rgba(66,203,161,1) 100%);
+}
+
+.second-card {
+    background: linear-gradient(90deg, rgba(169,52,118,1) 0%, rgba(209,128,20,1) 100%);
+}
+
+.first-card img {
+    position: relative;
+    top: 20%;
+}
+
+.first-card i {
+    position: relative;
+    left: -25px;
+    bottom: -170px;
+}
+
+.second-card img {
+    position: relative;
+    top: 10%;
+}
+
+.second-card i {
+    position: relative;
+    left: -25px;
+    bottom: -80px
+}

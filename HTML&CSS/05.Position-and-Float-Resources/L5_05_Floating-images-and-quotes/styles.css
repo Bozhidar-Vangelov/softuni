@@ -1,0 +1,49 @@
+html {
+    size: 16px;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    max-width: 70%;
+    margin: auto;
+    background: #eeeeee;
+}
+
+.site-title {
+    /* display: inline-block; */
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.first-article img {
+    float: right;
+    border: 2px solid black;
+    margin-left: 15px;
+    padding: 10px;
+    width: 150px;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    border-left: 2px solid grey;
+    padding-left: 20px;
+    color: grey;
+    float: right;
+    width: 30%;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+}
+
+.third-article img {
+    float: left;
+    border: 2px solid black;
+    margin-right: 15px;
+    padding: 10px;
+    width: 150px;
+}

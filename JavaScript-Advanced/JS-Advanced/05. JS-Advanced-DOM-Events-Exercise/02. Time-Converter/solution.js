@@ -19,7 +19,7 @@ function attachEventsListeners() {
     convert(minutesInput.value * 60);
   });
   secondsBtn.addEventListener("click", () => {
-    convert(seconds.value);
+    convert(secondsInput.value);
   });
 
   function convert(secs) {

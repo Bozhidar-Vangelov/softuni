@@ -5,7 +5,7 @@ function filterEmployees(data, criteria) {
   let filtered = [];
 
   for (const user of users) {
-    if (user[property] === value && criteria === "all") {
+    if (user[property] === value || criteria === "all") {
       filtered.push(
         `${counter}. ${user.first_name} ${user.last_name} - ${user.email}`
       );

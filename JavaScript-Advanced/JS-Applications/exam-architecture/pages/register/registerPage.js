@@ -1,4 +1,4 @@
-import { loginTemplate } from "./loginPageTemplate.js";
+import { registerTemplate } from "./registerTemplate.js";
 
 let _router = undefined;
 let _renderHandler = undefined;
@@ -21,7 +21,7 @@ async function submitHandler(e) {
     password: formData.get("password"),
   };
 
-  let loginResult = await _authService.login(user);
+  let registerResult = await _authService.register(user);
   _router.redirect("/home");
 }
 
@@ -30,7 +30,7 @@ async function getView() {
     submitHandler,
   };
 
-  let templateResult = loginTemplate(form);
+  let templateResult = registerTemplate(form);
   _renderHandler(templateResult);
 }
 

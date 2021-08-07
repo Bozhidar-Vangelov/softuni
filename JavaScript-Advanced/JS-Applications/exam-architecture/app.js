@@ -2,6 +2,7 @@ import page from "./node_modules/page/page.js";
 import homePage from "./pages/home/homePage.js.js";
 import loginPage from "./pages/login/loginPage.js";
 import navPage from "./pages/nav/navPage.js";
+import registerPage from "./pages/register/registerPage.js";
 import { LitRenderer } from "./rendering/litRenderer.js";
 import authService from "./services/authService.js";
 
@@ -17,6 +18,7 @@ let appRendererHandler = litRenderer.createRenderHandler(appElement);
 navPage.attach(page, navRenderHandler);
 homePage.attach(page, appRendererHandler);
 loginPage.attach(page, appRendererHandler, authService);
+registerPage.attach(page, appRendererHandler, authService);
 
 page(decorateUser);
 page(navPage.getView);
@@ -27,6 +29,7 @@ page("/index.html", "/home");
 // insert routes here
 page("/home", homePage.getView);
 page("/login", loginPage.getView);
+page("/register", registerPage.getView);
 
 page.start();
 

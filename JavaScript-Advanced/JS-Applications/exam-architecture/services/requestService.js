@@ -17,7 +17,7 @@ export async function requestService(
   }
 
   if (isAuthorized) {
-    headers["X-Authorization"] = authService.getAuthToken(); // от къде да го вземем
+    headers["X-Authorization"] = authService.getUser().accessToken;
   }
 
   let options = {

@@ -1,4 +1,4 @@
-import page from "./node_modules/page/page.js";
+import page from "./node_modules/page/page.mjs";
 import homePage from "./pages/home/homePage.js.js";
 import loginPage from "./pages/login/loginPage.js";
 import navPage from "./pages/nav/navPage.js";

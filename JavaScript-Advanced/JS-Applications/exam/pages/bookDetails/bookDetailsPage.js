@@ -3,6 +3,7 @@ import { bookDetailsTemplate } from "./bookDetailsTemplate.js";
 let _router = undefined;
 let _renderHandler = undefined;
 let _authService = undefined;
+let _neededBook = undefined;
 
 function attach(router, renderHandler, authService) {
   _router = router;
@@ -16,23 +17,35 @@ async function deleteHandler(id, e) {
   _router.redirect("/dashboard");
 }
 
+async function likeHandler(e) {
+  let bookId = _neededBook._id;
+
+  let headers = {
+    bookId,
+  };
+
+  await _authService.likeBook(headers);
+}
+
 async function getView(context, next) {
   let bookId = context.params._id;
-  let neededBook = await _authService.getBook(bookId);
+  _neededBook = await _authService.getBook(bookId);
   let user = context.user;
 
   let isOwner = false;
 
-  if (user !== undefined && user._id === neededBook._ownerId) {
+  if (user !== undefined && user._id === _neededBook._ownerId) {
     isOwner = true;
   }
 
-  console.log(isOwner);
+  let currentLikes = await _authService.getLikes(bookId);
+  _neededBook.currentLikes = currentLikes;
 
   let viewModel = {
     isLoggedIn: user !== undefined,
     deleteHandler,
-    neededBook,
+    likeHandler,
+    _neededBook,
     isOwner,
   };
 

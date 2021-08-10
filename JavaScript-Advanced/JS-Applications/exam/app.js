@@ -4,12 +4,11 @@ import bookDetailsPage from "./pages/bookDetails/bookDetailsPage.js";
 import dashboardPage from "./pages/dashboard/dashboardPage.js";
 import editBookPage from "./pages/editBook/editBookPage.js";
 import loginPage from "./pages/login/loginPage.js";
+import myBooksPage from "./pages/myBooks/myBooksPage.js";
 import navPage from "./pages/nav/navPage.js";
 import registerPage from "./pages/register/registerPage.js";
 import { LitRenderer } from "./rendering/litRenderer.js";
 import authService from "./services/authService.js";
-
-console.log("here");
 
 let appElement = document.getElementById("site-content"); // main index.html element
 let navElement = document.getElementById("site-header"); // nav element
@@ -27,6 +26,7 @@ registerPage.attach(page, appRenderHandler, authService);
 bookDetailsPage.attach(page, appRenderHandler, authService);
 addBookPage.attach(page, appRenderHandler, authService);
 editBookPage.attach(page, appRenderHandler, authService);
+myBooksPage.attach(page, appRenderHandler, authService);
 
 page(decorateUser);
 page(navPage.getView);
@@ -38,10 +38,10 @@ page("/index.html", "/dashboard");
 page("/dashboard", dashboardPage.getView);
 page("/login", loginPage.getView);
 page("/register", registerPage.getView);
-// page("/all-listings", allListingsPage.getView);
 page("/data/books/:_id", bookDetailsPage.getView, authService);
 page("/add-book", addBookPage.getView);
 page("/edit/:_id", editBookPage.getView);
+page("/my-books", myBooksPage.getView);
 
 page.start();
 

@@ -1,6 +1,8 @@
 import { requestService } from "./requestService.js";
 
 let baseUrl = "http://localhost:3030/users";
+let booksUrl = "http://localhost:3030/data/books";
+let likeUrl = "http://localhost:3030/data/likes";
 
 function setUser(user) {
   localStorage.setItem("user", JSON.stringify(user));
@@ -31,27 +33,20 @@ async function logout(user) {
 }
 
 async function getAllBooks() {
-  let result = await requestService(
-    "http://localhost:3030/data/books?sortBy=_createdOn%20desc"
-  );
+  let result = await requestService(`${booksUrl}?sortBy=_createdOn%20desc`);
 
   return result;
 }
 
 async function addBook(headers) {
-  let result = await requestService(
-    "http://localhost:3030/data/books",
-    "Post",
-    headers,
-    true
-  );
+  let result = await requestService(booksUrl, "Post", headers, true);
 
   return result;
 }
 
 async function deleteBook(id) {
   let result = await requestService(
-    `http://localhost:3030/data/books/${id}`,
+    `${booksUrl}/${id}`,
     "Delete",
     undefined,
     true
@@ -61,17 +56,34 @@ async function deleteBook(id) {
 }
 
 async function getBook(id) {
-  let result = await requestService(`http://localhost:3030/data/books/${id}`);
+  let result = await requestService(`${booksUrl}/${id}`);
   return result;
 }
 
 async function putBook(headers, id) {
+  let result = await requestService(`${booksUrl}/${id}`, "Put", headers, true);
+  return result;
+}
+
+async function getMyBooks(userId) {
   let result = await requestService(
-    `http://localhost:3030/data/books/${id}`,
-    "Put",
-    headers,
-    true
+    `${booksUrl}?where=_ownerId%3D%22${userId}%22&sortBy=_createdOn%20desc`
   );
+
+  return result;
+}
+
+async function likeBook(headers) {
+  let result = await requestService(likeUrl, "Post", headers, true);
+
+  return result;
+}
+
+async function getLikes(bookId) {
+  let result = await requestService(
+    `${likeUrl}?where=bookId%3D%22${bookId}%22&distinct=_ownerId&count`
+  );
+
   return result;
 }
 
@@ -86,4 +98,7 @@ export default {
   deleteBook,
   getBook,
   putBook,
+  getMyBooks,
+  likeBook,
+  getLikes,
 };

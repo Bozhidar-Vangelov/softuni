@@ -27,7 +27,7 @@ export let bookDetailsTemplate = (viewModel) =>
 
           <!-- Bonus -->
           <!-- Like button ( Only for logged-in users, which is not creators of the current book ) -->
-          ${viewModel.isLoggedIn
+          ${viewModel.isLoggedIn && !viewModel.isOwner && !viewModel._isLiked
             ? html` <a
                 class="button"
                 href="#"
@@ -51,5 +51,4 @@ export let bookDetailsTemplate = (viewModel) =>
         <h3>Description:</h3>
         <p>${viewModel._neededBook.description}</p>
       </div>
-    </section>
-    ${console.log(viewModel._neededBook.currentLikes)}`;
+    </section>`;

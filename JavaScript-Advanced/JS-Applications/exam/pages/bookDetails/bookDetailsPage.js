@@ -4,6 +4,7 @@ let _router = undefined;
 let _renderHandler = undefined;
 let _authService = undefined;
 let _neededBook = undefined;
+let _isLiked = undefined;
 
 function attach(router, renderHandler, authService) {
   _router = router;
@@ -17,7 +18,7 @@ async function deleteHandler(id, e) {
   _router.redirect("/dashboard");
 }
 
-async function likeHandler(e) {
+async function likeHandler(id, e) {
   let bookId = _neededBook._id;
 
   let headers = {
@@ -25,6 +26,13 @@ async function likeHandler(e) {
   };
 
   await _authService.likeBook(headers);
+
+  if (e.target !== null) {
+    e.target.parentNode.removeChild(e.target);
+    _isLiked = true;
+  }
+
+  console.log(_isLiked);
 }
 
 async function getView(context, next) {
@@ -47,6 +55,7 @@ async function getView(context, next) {
     likeHandler,
     _neededBook,
     isOwner,
+    _isLiked,
   };
 
   let templateResult = bookDetailsTemplate(viewModel);
